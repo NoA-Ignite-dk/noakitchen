@@ -6,7 +6,7 @@ body {
 @font-face {
   font-family: "Aften Screen";
   src: url("./fonts/AftenScreen-Regular.ttf") format("truetype"),
-      url("./fonts/AftenScreen-Regular.woff") format("woff");
+    url("./fonts/AftenScreen-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -14,12 +14,10 @@ body {
 @font-face {
   font-family: "Aften Screen Bold";
   src: url("./fonts/AftenScreen-Bold.ttf") format("truetype"),
-      url("./fonts/AftenScreen-Bold.woff") format("woff");
+    url("./fonts/AftenScreen-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
-
-
 
 p {
   margin-block-start: 0;
