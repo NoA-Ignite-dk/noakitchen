@@ -19,6 +19,19 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "resolutions": {
+    "kind-of": "^6.0.3",
+    "serialize-javascript": "^3.1.0",
+    "acorn": "^7.1.1",
+    "websocket-extensions": "^0.1.4",
+    "lodash": "^4.17.19",
+    "elliptic": "^6.5.3",
+    "dot-prop": "^4.2.1",
+    "yargs-parser": "^13.1.2",
+    "node-forge": "^0.10.0",
+    "object-path": "^0.11.5"
+
+  },
   "browserslist": {
     "production": [
       ">0.2%",
