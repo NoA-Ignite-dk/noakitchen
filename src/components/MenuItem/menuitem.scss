@@ -28,6 +28,13 @@
 
   &--active {
     background-color: #efdbc4;
+
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: .5s;
+
+    animation-name: fadeInBG;
+    -webkit-animation-name: fadeInBG;
   }
 
   .emoji {
@@ -85,5 +92,16 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+}
+
+
+@keyframes fadeInBG {
+  from {
+    background: #FFF;
+  }
+
+  to {
+    background: #efdbc4;
   }
 }
