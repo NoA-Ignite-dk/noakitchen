@@ -13,11 +13,6 @@
     font-family: "Aften Screen Bold";
     font-size: 28px;
   }
-
-  @media only screen and (min-width: 1200px) {
-    display: none;
-    height: 0;
-  }
 }
 
 .track {
@@ -43,6 +38,7 @@
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
+  z-index: 5;
   top: 0;
   width: 100%;
 }
