@@ -13,7 +13,7 @@ export default function MenuItem({
   ...props
 }) {
   const animation = today === weekday ? `fadeInUp 2s forwards, fadeInBG 2s forwards` : "fadeInUp 2s forwards";
-  const animationDelay = today === weekday ? `${0.25 + (.15 * index)}s, ${1 + (.15 * index)}s` : `${0.25 + (.15 * index)}s`;
+  const animationDelay = today === weekday ? `${0.15 + (.1 * index)}s, ${1 + (.1 * index)}s` : `${0.15 + (.1 * index)}s`;
   return (
     <div className="menuitem-wrapper">
       <div
