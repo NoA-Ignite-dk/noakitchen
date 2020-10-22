@@ -1,11 +1,22 @@
 .menuitem-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex: 1;
-  align-content: center;
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1100px) {
     height: calc(100vh - 72px);
+  }
+
+  background-color: #FFF;
+
+  &--active {
+    background-color: #efdbc4;
+
+    animation: fadeInBG 2s forwards;
+
+    animation-fill-mode: both;
+    animation-delay: .75s;
   }
 }
 
@@ -13,8 +24,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  flex: 1;
+  overflow: visible;
+  justify-content: flex-start;
 
   opacity: 0;
 
@@ -22,28 +33,19 @@
   min-height: 8rem;
 
   margin: 0 auto;
-  color: #174349;
-
-  background-color: #ffffff;
+  color: #313131;
 
   border-bottom: 1px #f2f2f2 solid;
-
-  &--active {
-    background-color: #efdbc4;
-
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-delay: 1s;
-  }
 
   .emoji {
     min-width: 130px;
     font-size: 4rem;
     display: flex;
     align-items: center;
+    height: 150px;
     justify-content: center;
 
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1100px) {
       font-size: 7rem;
     }
 
@@ -64,7 +66,7 @@
       font-size: 16px;
       opacity: 0.75;
 
-      @media only screen and (min-width: 1200px) {
+      @media only screen and (min-width: 1100px) {
         text-align: center;
         text-transform: uppercase;
       }
@@ -79,19 +81,35 @@
         font-family: "Aften Screen Bold";
       }
 
-      @media only screen and (min-width: 1200px) {
+      @media only screen and (min-width: 1100px) {
         text-align: center;
         padding: 0 20px;
       }
     }
   }
 
-  @media only screen and (min-width: 1200px) {
+  animation: fadeInUp 1s forwards;
+
+  @media only screen and (min-width: 1100px) {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border-bottom: 0px;
+    height: 250px;
   }
 }
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
 
 @keyframes fadeInBG {
   from {

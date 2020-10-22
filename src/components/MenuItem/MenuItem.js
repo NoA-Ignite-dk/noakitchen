@@ -12,17 +12,12 @@ export default function MenuItem({
   today,
   ...props
 }) {
-  const animation = today === weekday ? `fadeInUp 1s forwards, fadeInBG 1s forwards` : "fadeInUp 1s forwards";
-  const animationDelay = today === weekday ? `${.15 + (.1 * index)}s, ${0.5 + (.1 * index)}s` : `${.15 + (.1 * index)}s`;
+  const animationDelay = `${.15 + (.1 * index)}s`;
   return (
-    <div className="menuitem-wrapper">
+    <div className={css("menuitem-wrapper", { "menuitem-wrapper--active": today === weekday })}>
       <div
-        className={css("menuitem", { "menuitem--active": today === weekday })}
-        style={{
-          animation,
-          animationFillMode: "both",
-          animationDelay
-        }}
+        className="menuitem"
+        style={{ animationDelay }}
       >
         <div className="emoji">
           <span>{emoji}</span>
