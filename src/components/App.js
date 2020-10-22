@@ -6,8 +6,7 @@ import Marquee from "./Marquee/Marquee";
 import Menu from "./Menu/Menu";
 import Loading from "./Loading/Loading";
 
-let url =
-  "https://spreadsheets.google.com/feeds/list/1DkFyeKVHJ4il9Z_MxT9deFf_D1uqDiNKjopiTLqnhd8/od6/public/values?alt=json";
+let url = process.env.GOOGLE_SHEET_URL;
 
 function App() {
   const [data, setData] = useState([]);
