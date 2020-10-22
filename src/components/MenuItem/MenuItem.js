@@ -12,13 +12,14 @@ export default function MenuItem({
   today,
   ...props
 }) {
-  const animationDelay = `${.15 + (.1 * index)}s`;
+  const animationDelay = `${0.15 + 0.1 * index}s`;
   return (
-    <div className={css("menuitem-wrapper", { "menuitem-wrapper--active": today === weekday })}>
-      <div
-        className="menuitem"
-        style={{ animationDelay }}
-      >
+    <div
+      className={css("menuitem-wrapper", {
+        "menuitem-wrapper--active": today === weekday,
+      })}
+    >
+      <div className="menuitem" style={{ animationDelay }}>
         <div className="emoji">
           <span>{emoji}</span>
         </div>

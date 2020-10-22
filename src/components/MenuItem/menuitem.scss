@@ -8,7 +8,7 @@
     height: calc(100vh - 72px);
   }
 
-  background-color: #FFF;
+  background-color: #fff;
 
   &--active {
     background-color: #efdbc4;
@@ -16,7 +16,7 @@
     animation: fadeInBG 2s forwards;
 
     animation-fill-mode: both;
-    animation-delay: .75s;
+    animation-delay: 0.75s;
   }
 }
 
@@ -108,10 +108,9 @@
   }
 }
 
-
 @keyframes fadeInBG {
   from {
-    background: #FFF;
+    background: #fff;
   }
 
   to {
