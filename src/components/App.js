@@ -6,7 +6,7 @@ import Marquee from "./Marquee/Marquee";
 import Menu from "./Menu/Menu";
 import Loading from "./Loading/Loading";
 
-let url = process.env.GOOGLE_SHEET_URL;
+let url = process.env.REACT_APP_GOOGLE_SHEET_URL;
 
 function App() {
   const [data, setData] = useState([]);
