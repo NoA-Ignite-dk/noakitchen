@@ -8,10 +8,6 @@ _Built using Create React App_
 
 Hot reload is supported
 
-## Master sheet here
-https://docs.google.com/spreadsheets/d/1DkFyeKVHJ4il9Z_MxT9deFf_D1uqDiNKjopiTLqnhd8/edit
-#googlesheetasabackend #spreadsheetsarethebestCMS
-
 # TODO.MD
 
 ## NOW
@@ -30,11 +26,11 @@ https://docs.google.com/spreadsheets/d/1DkFyeKVHJ4il9Z_MxT9deFf_D1uqDiNKjopiTLqn
 - [X] change font to AftenScreen
 - [X] change favico and apple bookmark icon to new ones
 - [X] marquee animation langsommere
+- [x] Tilføj animation til load af siden (Brix)
+- [x] Desktop version (Brix)
+- [x] Secret spreadsheet location?
 
 ## FUTURE
-- [ ] Tilføj animation til load af siden (Brix)
-- [ ] Desktop version (Brix)
-- [ ] Secret spreadsheet location?
 - [ ] fish easteregg (caviar?)
 - [ ] Make into Electron app
 - [ ] Enable notifications
