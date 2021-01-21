@@ -27,6 +27,7 @@
   },
   "resolutions": {
     "kind-of": "^6.0.3",
+    "immer": "8.0.1",
     "serialize-javascript": "^3.1.0",
     "acorn": "^7.1.1",
     "websocket-extensions": "^0.1.4",
