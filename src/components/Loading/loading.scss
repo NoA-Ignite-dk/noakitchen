@@ -26,7 +26,11 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  animation: spin 4s linear infinite;
+	animation: spin 4s linear infinite;
+	
+	@media (prefers-color-scheme: dark) {
+		filter: invert(1);
+	}
 }
 
 @keyframes spin {

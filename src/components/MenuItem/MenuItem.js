@@ -18,6 +18,7 @@ export default function MenuItem({
       className={css("menuitem-wrapper", {
         "menuitem-wrapper--active": today === weekday,
       })}
+      aria-label={weekday}
     >
       <div className="menuitem" style={{ animationDelay }}>
         <div className="emoji">
