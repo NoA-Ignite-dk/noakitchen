@@ -4,14 +4,13 @@ import React from "react";
 
 export default function Marquee({ text }) {
   return (
-    <div className="marquee sticky">
+    <div className="marquee sticky" aria-readonly="true">
       <div className="track">
-        <span>
+        <span aria-label={text}>
           {text} {text} {text} {text} {text} {text} {text} {text} {text} {text}{" "}
           {text} {text} {text} {text} {text} {text} {text} {text} {text} {text}{" "}
           {text}
         </span>
-        {/* <span>THIS WEEK THIS WEEK THIS WEEK THIS WEEK THIS WEEK THIS WEEK THIS WEEK THIS WEEK THIS WEEK THIS WEEK THIS WEEK THIS WEEK THIS WEEK THIS WEEK THIS WEEK THIS WEEK THIS WEEK THIS WEEK THIS WEEK</span> */}
       </div>
     </div>
   );
