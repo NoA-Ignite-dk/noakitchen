@@ -6,7 +6,7 @@ import MenuItem from "../MenuItem/MenuItem";
 export default function Menu(props) {
   return (
     <div className="menuwrapper">
-      <ul>
+      <ol>
         {props.data.map((i, idx) => (
           <li key={i.day}>
             <MenuItem
@@ -19,7 +19,7 @@ export default function Menu(props) {
             />
           </li>
         ))}
-      </ul>
+      </ol>
     </div>
   );
 }

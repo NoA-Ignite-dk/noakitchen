@@ -1,4 +1,6 @@
 .marquee {
+	user-select: none;
+	pointer-events: none;
   position: relative;
   width: 100vw;
   max-width: 100%;
@@ -10,7 +12,7 @@
 
   p,
   span {
-    font-family: "Aften Screen Bold";
+    font-weight: 600;
     font-size: 28px;
   }
 }
@@ -24,6 +26,7 @@
   will-change: transform;
   animation: marquee 30s linear infinite;
   vertical-align: text-bottom;
+  will-change: transform;
 }
 
 @keyframes marquee {

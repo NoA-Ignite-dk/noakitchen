@@ -24,6 +24,7 @@ function App() {
       let dayArray = await response.data.feed.entry.filter(function (day) {
         return day.gsx$week.$t === "thisweek";
       });
+
       let thisWeek = await dayArray.map((day) => ({
         week: day.gsx$week.$t,
         emoji: day.gsx$emoji.$t,
@@ -31,8 +32,8 @@ function App() {
         description: day.gsx$description.$t,
       }));
 
-      setLoading(false);
       setData(thisWeek);
+      setLoading(false);
     }
 
     fetchData();
